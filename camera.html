@@ -6,7 +6,11 @@
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         
-            <a-text value="Hello, Bopp!"></a-text>
+           <a-assets>
+  <a-asset-item id="price" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+</a-assets>
+
+<a-entity gltf-model="##price"></a-entity>
         
       </a-marker>
       <a-entity camera></a-entity>
